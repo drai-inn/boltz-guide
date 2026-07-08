@@ -1,0 +1,20 @@
+{
+  "cursor_after_id": null,
+  "download_mode": "everything",
+  "idempotency_key": "download_a58ca3777d0a13470374ad9efffd6122",
+  "name": "smoke-test-run",
+  "pending": null,
+  "remote": {
+    "run_id": "sab_pred_TaPWBGcsGUB32ZOoSd6P",
+    "workspace_id": "ws_SMdnC5eNwpdZU8X91GHW",
+    "status": "succeeded",
+    "started_at": "2026-07-08T20:29:26.963Z",
+    "completed_at": "2026-07-08T20:30:11.333Z",
+    "stopped_at": null,
+    "latest_result_id": null,
+    "error_code": null
+  },
+  "request_fingerprint": "c2c67794db4a1072dd4cecd60c1ad404a99c3f2e9a5409a22155dc9957c4e202",
+  "run_type": "prediction",
+  "schema_version": 1
+}

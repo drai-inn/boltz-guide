@@ -1,0 +1,13 @@
+I want to use the Boltz API to predict structure and binding. Please follow this exact pattern:
+
+Create the input YAML payload in the current directory and pass it via @yaml://./<filename>.yaml.
+
+Run boltz-api predictions:structure-and-binding estimate-cost --model boltz-2.1 --input @yaml://./<filename>.yaml and ask me for confirmation before proceeding.
+
+Submit the job using an idempotency key and print the ID cleanly using:
+boltz-api predictions:structure-and-binding start --model boltz-2.1 --idempotency-key "<run-name>" --input @yaml://./<filename>.yaml --raw-output --transform id
+
+Download the results into my boltz-experiments folder using:
+boltz-api download-results --id "<job-id>" --name "<run-name>" --root-dir "~/boltz-experiments" --poll-interval-seconds 10
+
+Keep all boltz-api calls as top-level commands (do not use backgrounding like & or nohup).

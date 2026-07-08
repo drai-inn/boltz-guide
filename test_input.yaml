@@ -1,0 +1,5 @@
+entities:
+  - type: protein
+    value: MKWVTFISLLFLFSSAYSRGVFRR
+    chain_ids:
+      - A
