@@ -28,7 +28,7 @@
    ```
    Confirm it launches, then exit.
 
-4. **Configure DRAI access.** Create `~/.config/opencode/opencode.json` with exactly the following. This points OpenCode at our DRAI-hosted DGX Spark box and lists the available models (Gemma for now):
+4. **Configure DRAI access.** Create `~/.config/opencode/opencode.json` with exactly the following. This points OpenCode at our DRAI-hosted DGX Spark box and lists the available models (Qwen3.6 in this example):
    ```json
    {
      "$schema": "https://opencode.ai/config.json",
@@ -40,8 +40,8 @@
            "baseURL": "https://litellm.test.drai.auckland.ac.nz/v1"
          },
          "models": {
-           "gemma-4-26B-A4B-it": {
-             "name": "gemma-4-26B-A4B-it"
+           "Qwen3.6-35B-A3B": {
+             "name": "Qwen3.6-35B-A3B"
            }
          }
        }
@@ -95,7 +95,7 @@
 2. Type `/connect` to connect to DRAI's API. A list of providers appears.
 3. Start typing `DRAI` — it will surface **DRAI UoA models**. Select it.
 4. Enter the API key provided to you by **Chris or Jun**, then press Enter.
-5. You now have access to **gemma-4-26B-A4B-it** by default — you should see it just below the chat prompt window. If not, type `/model` and select **gemma-4-26B-A4B-it** under **DRAI UoA models**.
+5. You now have access to **Qwen3.6-35B-A3B** by default — you should see it just below the chat prompt window. If not, type `/model` and select **Qwen3.6-35B-A3B** under **DRAI UoA models**.
 
 ---
 
@@ -108,4 +108,4 @@
    ```
 2. Prompt it to note that there's an instruction `.txt` file in the current folder, and ask it to do a **quick smoke test**. For example:
    > There's an instruction txt file in the current folder. Please read it and run a quick smoke test.
-3. **Note:** the Gemma model tends to work in small steps and may pause mid-task waiting for explicit permission. If it stops, simply follow up with `please continue`.
+3. **Note (Not relevant to Qwen model):** the Gemma model tends to work in small steps and may pause mid-task waiting for explicit permission. If it stops, simply follow up with `please continue`.
