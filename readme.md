@@ -90,7 +90,6 @@ Claude will read the predicted structure and confidence scores and build an inte
 | Path | Description |
 |---|---|
 | `boltz-01.yaml` | Example input sequence for a local `boltz predict` run |
-| `boltz-experiments/` | Output artifacts from prediction runs |
 | `boltz_results_<name>/` | Output of a `boltz predict` run; `report.html` inside it is the visualization described above |
 | `CLAUDE.md` | Project rules for Claude Code, incl. where visualization reports get saved |
 
