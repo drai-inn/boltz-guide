@@ -77,12 +77,22 @@ boltz predict boltz-01.yaml --use_msa_server --num_workers 0 --override
 
 Results are written to a `boltz_results_<input-name>/` directory alongside the input YAML.
 
+### 3. Visualize the results
+
+This repo is set up to work with [Claude Code](https://claude.com/claude-code). Once a prediction has finished, just ask Claude to look at the output, e.g.:
+
+> Visualize the results in `boltz_results_boltz-01`
+
+Claude will read the predicted structure and confidence scores and build an interactive HTML report — a 3D structure viewer (colored by pLDDT confidence and by chain), a per-residue confidence chart, and a predicted aligned error (PAE) heatmap. It publishes the report as a shareable link and also saves a copy as `report.html` inside that run's `boltz_results_<input-name>/` folder, so the visualization stays with the experiment (see [`CLAUDE.md`](CLAUDE.md)).
+
 ## Repository Layout
 
 | Path | Description |
 |---|---|
 | `boltz-01.yaml` | Example input sequence for a local `boltz predict` run |
 | `boltz-experiments/` | Output artifacts from prediction runs |
+| `boltz_results_<name>/` | Output of a `boltz predict` run; `report.html` inside it is the visualization described above |
+| `CLAUDE.md` | Project rules for Claude Code, incl. where visualization reports get saved |
 
 ## References
 
