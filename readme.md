@@ -115,9 +115,12 @@ Point OpenCode at DRAI's DGX Spark box by creating
       "options": {
         "baseURL": "https://litellm.test.drai.auckland.ac.nz/v1"
       },
-      "models": {
-        "Qwen3.6-35B-A3B": {
-          "name": "Qwen3.6-35B-A3B"
+    "models": {
+        "qwen38-27b": {
+          "name": "qwen38-27b"
+         },
+        "gemma-4-26B-A4B-it": {
+        "name": "gemma-4-26B-A4B-it"
         }
       }
     }
